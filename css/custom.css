@@ -1,0 +1,90 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*/
+
+.nav-menu-kanan {
+  display: inline-block;
+  width: 65% !important;
+}
+
+.ul-menu-kanan {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  /* border: 0.81px solid #5777ba !important; */
+  overflow: hidden;
+}
+
+.ul-menu-kanan li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-left: 0 !important;
+}
+
+.ul-menu-kanan li a {
+  width: 100%;
+  color: #5777ba !important;
+  padding: 5px 7px !important;
+}
+
+.ul-menu-kanan li > a.active {
+  background-color: #5777ba;
+  color: white !important;
+}
+
+.ul-menu-kanan li:hover > a {
+  background-color: orange !important;
+  color: white !important;
+}
+
+.color-heading-primary h1 {
+  color: #5777ba !important;
+}
+
+.color-primary {
+  color: #5777ba !important;
+}
+
+/* Button */
+.btn-orange {
+  background-color: orange !important;
+  border: orange !important;
+}
+
+.btn-orange:hover {
+  background-color: #e8b75d !important;
+}
+
+.btn-purple {
+  background-color: #5777ba !important;
+  border: 1px solid #5777ba !important;
+}
+
+.btn-purple:hover {
+  background-color: #7595d8 !important;
+  border: 1px solid #7595d8 !important;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-kanan {
+    display: flex;
+    align-items: center;
+    width: 50% !important;
+    height: 80px;
+    /* padding: 10px; */
+  }
+  .w-sm-100 {
+    width: 50% !important;
+  }
+  .ul-menu-kanan {
+    width: 60%;
+  }
+}
