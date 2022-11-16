@@ -26,36 +26,66 @@
 
               <form id="form1" class="form-validate mt-5">
                 <div class="h5 mb-4">Account details</div>
-
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" name="username" placeholder="Enter username" required="" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" name="email" placeholder="Enter your email" required="" />
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <div class="input-group show-hide-password">
-                    <input class="form-control" name="password" placeholder="Enter password" type="password" required="" />
-                    <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer"></i></span>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control" name="username" placeholder="Enter username" required="" />
+                    </div>
                   </div>
-                </div>
-                <div class="form-group mb-1 mt-5">
-                  <input type="checkbox" name="reminders" id="reminders" class="form-check-input" value="1" required="" />
-                  <label class="custom-control-label" for="reminders">Send me occasional reminders about these settings</label>
-                </div>
-                <div class="form-group">
-                  <input type="checkbox" name="terms_conditions" id="terms_conditions" class="form-check-input" value="1" required="" />
-                  <label class="custom-control-label" for="terms_conditions">By checking this option, you agree to acceot with the <a href="#">Terms and Conditions</a>.</label>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="noHp">Phone Number</label>
+                      <input type="tel" class="form-control" name="noHp" placeholder="Enter Phone Number" required="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12">
+                    <div class="form-group">
+                      <label for="email">Address</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ketikan Alamat" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" name="email" placeholder="Enter your email" required="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <div class="input-group show-hide-password">
+                        <input class="form-control" name="password" placeholder="Enter password" type="password" required="" />
+                        <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="password">Confirm Password</label>
+                      <div class="input-group show-hide-password">
+                        <input class="form-control" name="password" placeholder="Enter Confirm password" type="password" required="" />
+                        <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="form-group mb-1 mt-5">
+                    <input type="checkbox" name="reminders" id="reminders" class="form-check-input" value="1" required="" />
+                    <label class="custom-control-label" for="reminders">Send me occasional reminders about these settings</label>
+                  </div> -->
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="checkbox" name="terms_conditions" id="terms_conditions" class="form-check-input" value="1" required="" />
+                      <label class="custom-control-label" for="terms_conditions">By checking this option, you agree to acceot with the <a href="#">Terms and Conditions</a>.</label>
+                    </div>
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
               <div class="mt-4"><small>Already have an acocunt?</small> <a href="page-user-login-cover.html" class="small fw-bold">Sign in</a></div>
             </div>
           </div>
-          <div class="col-md-4 col-lg-5 d-none d-md-block bg-cover" style="background-image: url(images/parallax/4.jpg)">
+          <div class="col-md-4 col-lg-5 d-none d-md-block" style="background-image: url(images/background/bg-account.png); background-size: 100%; background-repeat: no-repeat">
             <a href="index.html" class="btn btn-white btn-rounded-only btn-rounded position-absolute left-4 top-4" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Go back Homepage"><i class="icon-home"></i></a>
           </div>
         </div>
