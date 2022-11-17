@@ -14,6 +14,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" />
+    <!-- Select Country -->
+    <link rel="stylesheet" href="select-country/css/countrySelect.min.css" />
   </head>
 
   <body id="sd">
@@ -93,7 +95,10 @@
                             <div class="col-12 p-0">
                               <p>Anda Mengirim :</p>
                             </div>
-                            <div class="col-2 d-flex align-items-center p-0 overflow-hidden">
+                            <div class="col-6">
+                              <input type="text" class="form-control" id="country" />
+                            </div>
+                            <!-- <div class="col-2 d-flex align-items-center p-0 overflow-hidden">
                               <img src="images/flag/id.png" class="shadow-sm" style="width: 90%" alt="" />
                             </div>
                             <div class="col-4 col-sm-3">
@@ -101,8 +106,8 @@
                                 <option value="">IDR</option>
                                 <option value="">SIN</option>
                               </select>
-                            </div>
-                            <div class="col-6 col-sm-7">
+                            </div> -->
+                            <div class="col-6">
                               <input type="text" class="form-control" value="20.000.000" placeholder="20.000.000" />
                             </div>
                             <div class="col-12">
@@ -170,37 +175,44 @@
       <!-- GOOD THINGS -->
       <section id="section2" class="fullscreen" style="background-color: #ffffff; background: url('images/background/bg-grid-white.png'); background-size: 100%; background-repeat: no-repeat; background-position: top">
         <div class="container">
-          <div class="container-fullscreen">
+          <div class="cont">
             <div class="text-middle">
               <div class="text-center color-heading-primary">
                 <h1 class="text-medium">KEUNTUNGAN Q - ARTHA</h1>
                 <p class="lead m-b-80">Keunggulan menggunakan layanan kami</p>
               </div>
               <div class="row">
-                <div class="col-lg-4">
-                  <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-purple.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
-                    <div class="card-body">
-                      <img src="images/background/simple.png" class="d-block m-auto w-75" alt="" />
-                      <h2 class="mt-5"><strong>Simpel</strong></h2>
-                      <p>Kirim uang ke mana aja dengan sekali klik, dalam hitungan menit, semua beres</p>
+                <div class="col-12">
+                  <div class="carousel" data-items="3" data-margin="20" data-dots="true" data-autoplay="true" data-autoplay="500" data-arrows="false" data-loop="true" data-animate-out="fadeOut" data-animate-in="fadeIn">
+                    <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-purple.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
+                      <div class="card-body">
+                        <img src="images/gambar/simple.png" class="d-block m-auto w-50" alt="" />
+                        <h2 class="mt-5"><strong>Simpel</strong></h2>
+                        <p>Kirim uang ke mana aja dengan sekali klik, dalam hitungan menit, semua beres</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-orange.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
-                    <div class="card-body">
-                      <img src="images/background/secure.png" class="d-block m-auto w-75" alt="" />
-                      <h2 class="mt-5"><strong>Aman</strong></h2>
-                      <p>Transaksi kamu 100% aman karena kami terlisensi dan diawasi Bank Indonesia</p>
+
+                    <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-orange.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
+                      <div class="card-body">
+                        <img src="images/gambar/secure.png" class="d-block m-auto w-50" alt="" />
+                        <h2 class="mt-5"><strong>Aman</strong></h2>
+                        <p>Transaksi kamu 100% aman karena kami terlisensi dan diawasi Bank Indonesia</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-purple.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
-                    <div class="card-body">
-                      <img src="images/background/hemat.png" class="d-block m-auto w-75" alt="" />
-                      <h2 class="mt-5"><strong>Hemat</strong></h2>
-                      <p>Berapapun jumlah yang kamu kirim biaya transaksi tetap sama</p>
+
+                    <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-purple.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
+                      <div class="card-body">
+                        <img src="images/gambar/hemat.png" class="d-block m-auto w-50" alt="" />
+                        <h2 class="mt-5"><strong>Hemat</strong></h2>
+                        <p>Berapapun jumlah yang kamu kirim biaya transaksi tetap sama</p>
+                      </div>
+                    </div>
+                    <div class="card text-light text-center" style="border-radius: 20px; background-color: #5777ba !important; background: url('images/background/bg-orange.png'); background-repeat: no-repeat; background-size: 100%; background-position: bottom; border: none">
+                      <div class="card-body">
+                        <img src="images/gambar/secure.png" class="d-block m-auto w-50" alt="" />
+                        <h2 class="mt-5"><strong>Aman</strong></h2>
+                        <p>Transaksi kamu 100% aman karena kami terlisensi dan diawasi Bank Indonesia</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -456,5 +468,10 @@
 
     <!--Template functions-->
     <script src="js/functions.js"></script>
+    <!-- country js -->
+    <script src="select-country/js/countrySelect.min.js"></script>
+    <script>
+      $("#country").countrySelect();
+    </script>
   </body>
 </html>
