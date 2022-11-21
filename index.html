@@ -16,6 +16,11 @@
     <link href="css/custom.css" rel="stylesheet" />
     <!-- Select Country -->
     <link rel="stylesheet" href="select-country/css/countrySelect.min.css" />
+    <!-- <style>
+      * {
+        border: 1px solid green;
+      }
+    </style> -->
   </head>
 
   <body id="sd">
@@ -83,17 +88,18 @@
       <!-- HOME -->
       <section id="section1" data-section-name="Branding Home" class="fullscreen text-light" style="background-color: #ffffff; background: url('images/background/bg-home.png'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: top">
         <div class="container">
-          <div class="container-fullscreen">
+          <div class="container-fullscreenss">
             <div class="text-middle">
               <div class="row">
                 <div class="col-lg-5 text-dark order-last order-sm-0">
                   <div class="row">
-                    <div class="col-lg-11">
+                    <div class="col-lg-12">
                       <div class="card border-0" style="border-radius: 20px">
                         <div class="card-body">
-                          <form class="row g-3">
+                          <form class="row g-3" name="currency">
                             <div class="col-12 p-0">
                               <h4 class="text-center">Transaksi</h4>
+                              <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, exercitationem!</p> -->
                             </div>
                             <div class="col-6">
                               <label for="country">Pilih Negara Tujuan</label>
@@ -109,13 +115,13 @@
                             <div class="col-12">
                               <label for="pilihBank">Masukan Jumlah Uang</label>
                               <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Jumlah Uang yang dikirim" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                                <input type="text" class="form-control" name="uangMasuk" placeholder="Jumlah Uang yang dikirim" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                                 <span class="input-group-text" id="basic-addon2">IDR</span>
                               </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 hiddent-elements hidden">
                               <div class="ps-4 pe-4">
-                                <div class="row" style="border-left: 1px solid #7f7878 !important; display: flex; align-items: center">
+                                <div class="row" style="border-left: 1px solid #e7e7e7 !important; display: flex; align-items: center">
                                   <div class="col-12 col-md-6">Fee</div>
                                   <div class="col-12 col-md-6 text-end">99,000 IDR</div>
                                   <div class="col-12 col-md-6">Our Fee</div>
@@ -125,25 +131,15 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 hiddent-elements hidden">
                               <label for="pilihBank"> Jumlah Uang yang diterima</label>
                               <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Jumlah Uang yang diterima" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                                 <span class="input-group-text" id="basic-addon2">PYT</span>
                               </div>
                             </div>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias placeat impedit magnam tempore possimus, quia cum officia laudantium?</p> -->
-                            <!-- <div class="col-2 d-flex align-items-center p-0 overflow-hidden">
-                              <img src="images/flag/id.png" class="shadow-sm" style="width: 90%" alt="" />
-                            </div>
-                            <div class="col-4 col-sm-3">
-                              <select name="" class="form-select" id="">
-                                <option value="">IDR</option>
-                                <option value="">SIN</option>
-                              </select>
-                            </div> -->
                             <div class="col-12">
-                              <button class="btn btn-purple d-block w-100">Selanjutnya</button>
+                              <button class="btn btn-purple d-block w-100 btn-toggle">Selanjutnya</button>
                             </div>
                           </form>
                         </div>
@@ -475,6 +471,12 @@
     <script src="select-country/js/countrySelect.min.js"></script>
     <script>
       $("#country").countrySelect();
+    </script>
+    <script>
+      $(".btn-toggle").on("click", function (e) {
+        e.preventDefault();
+        $(".hiddent-elements").toggle();
+      });
     </script>
   </body>
 </html>
